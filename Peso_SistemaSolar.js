@@ -51,3 +51,4 @@ switch(planeta) {
 
 // Valor del peso a imp
   peso_final = (peso_final.toFixed(2));
+  document.write("Tu peso en " + nombre + " es <strong>" + peso_final + " kilos</strong>");
