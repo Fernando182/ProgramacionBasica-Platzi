@@ -31,7 +31,8 @@ function dibujoPorClick()
     dibujarLinea(colorcito, 0, yi, xf, 300);
     console.log("Linea " + l);
   }
-
-  dibujarLinea(colorcito, 1,1,1,299);
-  dibujarLinea(colorcito, 1,299,299,299);
 }
+  dibujarLinea("black", 1,1,1,299);
+  dibujarLinea("black", 1,299,299,299);
+  dibujarLinea("black", 299,299,299,1);
+  dibujarLinea("black", 299,1,1,1);
