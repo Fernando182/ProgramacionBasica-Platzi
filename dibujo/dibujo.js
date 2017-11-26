@@ -4,6 +4,7 @@ boton.addEventListener("click", dibujoPorClick );
 
 var d = document.getElementById("dibujito");
 var ancho = d.width;
+var alto = d.height;
 var lienzo = d.getContext("2d");
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
@@ -28,11 +29,12 @@ function dibujoPorClick()
   {
     yi = espacio * l;
     xf = espacio * (l + 1);
-    dibujarLinea(colorcito, 0, yi, xf, 300);
+    dibujarLinea(colorcito, 0, yi, xf, alto);
     console.log("Linea " + l);
   }
 }
-  dibujarLinea("black", 1,1,1,299);
-  dibujarLinea("black", 1,299,299,299);
-  dibujarLinea("black", 299,299,299,1);
-  dibujarLinea("black", 299,1,1,1);
+
+  dibujarLinea("black", 1,1,1,(alto-1));
+  dibujarLinea("black", 1,(alto-1),(ancho-1),(alto-1));
+  dibujarLinea("black", (ancho-1),(alto-1),(ancho-1),1);
+  dibujarLinea("black", (ancho-1),1,1,1);
