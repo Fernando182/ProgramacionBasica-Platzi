@@ -4,3 +4,4 @@
 - (dom) Pruebas de DOM
 - (dibujo) Dibujos con Canvas :computer:
 - (flechas) Mover con flechas del teclado
+- (VillaPlatzi) Funciones matematicas JS 
