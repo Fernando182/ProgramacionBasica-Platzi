@@ -62,6 +62,8 @@ function cargarPollos()
 
 function dibujar()
 {
+
+
   if(fondo.cargaOK)
   {
     papel.drawImage(fondo.imagen, 0, 0);
@@ -79,7 +81,6 @@ function dibujar()
       papel.drawImage(vaca.imagen, x, y);
     }
   }
-
   if(cerdo.cargaOK)
   {
     console.log("Cerdo "+cerdo.cantidad);
