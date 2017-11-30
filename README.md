@@ -6,4 +6,5 @@
 - (flechas) Mover con flechas del teclado
 - (villaPlatzi) Funciones matematicas JS
 - (modulo) Programa FizzBuzz
-- (Pakiman) Jueo Pakiman
+- (Pakiman) Pakidex Array
+- (Cajero)
