@@ -4,4 +4,6 @@
 - (dom) Pruebas de DOM
 - (dibujo) Dibujos con Canvas :computer:
 - (flechas) Mover con flechas del teclado
-- (VillaPlatzi) Funciones matematicas JS 
+- (villaPlatzi) Funciones matematicas JS
+- (modulo) Programa FizzBuzz
+- (Pakiman) Jueo Pakiman
