@@ -11,7 +11,9 @@
 
 ## git note
 git add  (ctrl+shift+A)
+
 git commit (ctrl+shift+X)
+
 git push
 
-# (ctrl+shift+A P) All inclusive
+(ctrl+shift+A P) All inclusive
