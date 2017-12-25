@@ -8,6 +8,10 @@
 - (modulo) Programa FizzBuzz
 - (Pakiman) Pakidex Array
 - (Cajero)
-- Test Git
 
-// Coment 
+## git note
+git add  (ctrl+shift+A)
+git commit (ctrl+shift+X)
+git push
+
+# (ctrl+shift+A P) All inclusive
