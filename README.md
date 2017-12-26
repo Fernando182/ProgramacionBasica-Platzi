@@ -9,6 +9,8 @@
 - (Pakiman) Pakidex Array
 - (Cajero)
 
+//
+Note
 ## git note
 git add  (ctrl+shift+A)
 
