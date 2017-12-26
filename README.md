@@ -9,13 +9,8 @@
 - (Pakiman) Pakidex Array
 - (Cajero)
 
-//
-Note
 ## git note
-git add  (ctrl+shift+A)
-
-git commit (ctrl+shift+X)
-
-git push
-
+1-git add  (ctrl+shift+A)
+2-git commit (ctrl+shift+X)
+3-git push
 (ctrl+shift+A P) All inclusive
