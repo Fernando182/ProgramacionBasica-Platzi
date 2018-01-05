@@ -18,13 +18,12 @@ git push
 
 (ctrl+shift+A P) All inclusive
 
-#Asuntos Pendientes
--pizarra Platzi
-  -cambio de color 
-  -tamaño del pincel 
-  -limpiar pizarra 
+#Pizarra Platzi
+  -cambio de color
+  -tamaño del pincel
+  -limpiar pizarra
   -linia recta
-  -pincel 
+  -pincel
 
 #Villa Platzi
 - Crear Cuadricula Sobre la Imagen
