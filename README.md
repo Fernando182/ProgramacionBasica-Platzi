@@ -16,9 +16,7 @@ git commit (ctrl+shift+X)
 
 git push
 
-(ctrl+shift+A P) All inclusive
-
-#Pizarra Platzi
+-Pizarra Platzi
   -cambio de color
   -tamaño del pincel
   -limpiar pizarra
