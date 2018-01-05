@@ -20,8 +20,8 @@ git push
 
 #Asuntos Pendientes
 - Crear Cuadricula Sobre la Imagen
-- Guardar Posicion de Obstaculos
-- Comprar Posiciones
+  - Guardar Posicion de Obstaculos
+  - Comprar Posiciones
 - Dibujar Lobo
 - Mover Lobo y contar movimientos
 - Llegar a la Gallina
