@@ -19,11 +19,19 @@ git push
 (ctrl+shift+A P) All inclusive
 
 #Asuntos Pendientes
+-pizarra Platzi
+  -cambio de color 
+  -tamaño del pincel 
+  -limpiar pizarra 
+  -linia recta
+  -pincel 
+
+#Villa Platzi
 - Crear Cuadricula Sobre la Imagen
   - Guardar Posicion de Obstaculos
   - Comprar Posiciones
 - Dibujar Lobo
-- Mover Lobo y contar movimientos
-- Llegar a la Gallina
+  - Mover Lobo y contar movimientos
+    - Llegar a la Gallina
 - Fondo de Perdida y ganada
 - Ciclo de fin y (gano/Perdio)
