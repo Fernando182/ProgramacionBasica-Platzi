@@ -18,6 +18,10 @@ git push
 
 #Pizarra Platzi
 
+
+
+
+
   -Cambio de color
   -Tamaño del pincel
   -Limpiar pizarra
