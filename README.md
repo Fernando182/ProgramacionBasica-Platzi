@@ -20,8 +20,6 @@ git push
 
 
 
-
-
   -Cambio de color
   -Tamaño del pincel
   -Limpiar pizarra
