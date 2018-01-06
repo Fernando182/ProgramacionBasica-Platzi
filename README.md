@@ -10,12 +10,11 @@
 - (Cajero)
 
 #Pizarra Platzi
-
-  -Cambio de color
-  -Tamaño del pincel
-  -Limpiar pizarra
-  -Linia recta
-  -Pincel
+- Cambio de color
+- Tamaño del pincel
+- Limpiar pizarra
+- Linia recta
+- Pincel
 
 #Villa Platzi
 - Crear Cuadricula Sobre la Imagen
