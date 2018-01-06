@@ -17,11 +17,11 @@ git commit (ctrl+shift+X)
 git push
 
 #Pizarra Platzi
-  -cambio de color
-  -tamaño del pincel
-  -limpiar pizarra
-  -linia recta
-  -pincel
+  -Cambio de color
+  -Tamaño del pincel
+  -Limpiar pizarra
+  -Linia recta
+  -Pincel
 
 #Villa Platzi
 - Crear Cuadricula Sobre la Imagen
