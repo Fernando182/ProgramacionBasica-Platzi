@@ -9,17 +9,14 @@
 - (Pakiman) Pakidex Array
 - (Cajero)
 
-#Pizarra Platzi
-- Crear Cuadricula Sobre la Imagen
-  - Guardar Posicion de Obstaculos
-  - Un
+# Pizarra Platzi
 - Cambio de color
 - Tamaño del pincel
 - Limpiar pizarra
 - Linia recta
 - Pincel
 
-#Villa Platzi
+# Villa Platzi
 - Crear Cuadricula Sobre la Imagen
   - Guardar Posicion de Obstaculos
   - Comprar Posiciones
