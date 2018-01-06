@@ -17,6 +17,7 @@ git commit (ctrl+shift+X)
 git push
 
 #Pizarra Platzi
+
   -Cambio de color
   -Tamaño del pincel
   -Limpiar pizarra
