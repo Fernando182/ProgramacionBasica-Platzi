@@ -5,8 +5,33 @@
     <title>Dibujando con flechas</title>
   </head>
   <body>
-    <canvas width="400" height="400" style="border: 1px solid black" id="area_de_dibujo"></canvas>
+    <canvas width="300" height="300" style="border: 1px solid black" id="area_de_dibujo"></canvas>
     <p>Mueve las flechas del teclado para dibujar</p>
-    <script type="text/javascript" src="eventos.js"></script>
+
+    <input type="button" value="Limpiar!" id="Limpiar" />
+    <br/>
+    <br/>
+    <form>
+      Color deseado:
+      <select name="color">
+        <!-- Opciones de la lista -->
+        <option value="red" selected>Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="black">Negro</option>
+      </select>
+    <br/>
+    <br/>
+      Pincel deseado:
+      <select name="pincel">
+        <!-- Opciones de la lista -->
+        <option value=1>1x</option>
+        <option value=3 selected>3x</option>
+        <option value=6>6x</option>
+        <option value=8>8x</option>
+        <option value=10>10x</option>
+      </select>
+    </form>
+
+   <script type="text/javascript" src="eventos.js"></script>
   </body>
 </html>
