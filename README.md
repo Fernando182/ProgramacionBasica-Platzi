@@ -12,6 +12,7 @@
 #Pizarra Platzi
 - Crear Cuadricula Sobre la Imagen
   - Guardar Posicion de Obstaculos
+  - Un
 - Cambio de color
 - Tamaño del pincel
 - Limpiar pizarra
