@@ -10,6 +10,8 @@
 - (Cajero)
 
 #Pizarra Platzi
+- Crear Cuadricula Sobre la Imagen
+  - Guardar Posicion de Obstaculos
 - Cambio de color
 - Tamaño del pincel
 - Limpiar pizarra
