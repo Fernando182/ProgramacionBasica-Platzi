@@ -8,8 +8,8 @@ var teclas = {
 document.addEventListener("keydown", dibujarTeclado);
 var cuadrito = document.getElementById("area_de_dibujo");
 var papel = cuadrito.getContext("2d");
-var x = 150;
-var y = 150;
+var x = 200;
+var y = 200;
 
 dibujarLinea("red", x-1, y-1, x+1, y+1, papel);
 

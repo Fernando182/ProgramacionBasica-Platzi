@@ -14,6 +14,7 @@
 - Tamaño del pincel
 - Limpiar pizarra
 - Linia recta
+- Dibujar con mouse
 - Pincel
 
 # Villa Platzi
