@@ -9,17 +9,7 @@
 - (Pakiman) Pakidex Array
 - (Cajero)
 
-## git note
-git add  (ctrl+shift+A)
-
-git commit (ctrl+shift+X)
-
-git push
-
 #Pizarra Platzi
-
-
-
   -Cambio de color
   -Tamaño del pincel
   -Limpiar pizarra
