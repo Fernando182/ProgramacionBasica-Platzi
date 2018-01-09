@@ -2,13 +2,8 @@
 var boton = document.getElementById("Limpiar");
 boton.addEventListener("click", limpiar_pantalla );
 
-function limpiar_pantalla(){
-  	//borrar todo lo del canvas --->
-    papel.clearRect(0, 0, cuadrito.width, cuadrito.height);
-    dibujarLinea("blue", w-1, h-1, w+1, h+1, papel);
-  }
-
 //var colorcito = document.getElementById()
+
 // Ordenes del Teclado
 var teclas = {
   UP: 38,
@@ -18,13 +13,13 @@ var teclas = {
 };
 document.addEventListener("keydown", dibujarTeclado);
 
+//Entorno de didujo Canvas
 var cuadrito = document.getElementById("area_de_dibujo");
 var papel = cuadrito.getContext("2d");
-var w = cuadrito.width/2;
-var h = cuadrito.height/2;
-var x = w;
-var y = h;
 
+//Punto de Partida
+var x = cuadrito.width/2;
+var y = cuadrito.height/2;
 dibujarLinea("blue", x-1, y-1, x+1, y+1, papel);
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
@@ -37,6 +32,14 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
   lienzo.stroke();
   lienzo.closePath();
 }
+
+function limpiar_pantalla(){
+  	//borrar todo lo del canvas --->
+    papel.clearRect(0, 0, cuadrito.width, cuadrito.height);
+    window.x = cuadrito.width/2;
+    window.y = cuadrito.height/2;
+    dibujarLinea("blue", x-1, y-1, x+1, y+1, papel);
+  }
 
 function dibujarTeclado(evento)
 {

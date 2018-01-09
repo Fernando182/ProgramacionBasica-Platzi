@@ -24,3 +24,7 @@
     - Llegar a la Gallina
 - Fondo de Perdida y ganada
 - Ciclo de fin y (gano/Perdio)
+
+(ADDED, UPDATED, FIXED, DELETED)
+Ejem:
+UPDATED styles/about.scss: Cambio color fuente a rojo
