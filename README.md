@@ -15,7 +15,6 @@
 - Tamaño del pincel (HTML)
 - Linia recta
 - Dibujar con mouse
-- Pincel
 
 # Villa Platzi
 - Crear Cuadricula Sobre la Imagen

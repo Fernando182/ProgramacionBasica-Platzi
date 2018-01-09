@@ -1,4 +1,3 @@
-
 var estado = 0;          // estado del click
 var colorLinea = "blue";    // color a la linea
 
