@@ -10,7 +10,6 @@
 - (Cajero)
 
 # Pizarra Platzi
-- Limpiar pizarra (HTML)
 - Cambio de color (HTML)
 - Tamaño del pincel (HTML)
 - Linia recta
