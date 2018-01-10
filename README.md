@@ -10,7 +10,6 @@
 - (Cajero)
 
 # Pizarra Platzi
-- Cambio de color (HTML)
 - Tamaño del pincel (HTML)
 - Linia recta
 - Dibujar con mouse
