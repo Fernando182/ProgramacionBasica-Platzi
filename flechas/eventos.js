@@ -6,8 +6,16 @@ boton.addEventListener("click", limpiar_pantalla );
 document.getElementById("color").addEventListener("change", selectColor);
 var colorcito = document.getElementById("color").value;
 
-//Traemos pincel
+//Traemos Color desde HTML
+var pincelito = document.getElementById("pincel");
+pincelito.addEventListener("change", selectPincel);
+var p = document.getElementById("pincel").value;
 
+console.log(pincelito);
+
+function selectPincel(){
+console.log(p);
+  }
 
 
 // Ordenes del Teclado
@@ -18,6 +26,7 @@ var teclas = {
   RIGHT: 39
 };
 document.addEventListener("keydown", dibujarTeclado);
+
 
 //Entorno de didujo Canvas
 var cuadrito = document.getElementById("area_de_dibujo");
