@@ -1,8 +1,12 @@
 //Manejador de evento boton de limpiar
-var boton = document.getElementById("Limpiar");
+var boton = document.getElementById("limpiar");
 boton.addEventListener("click", limpiar_pantalla );
+console.log(boton);
 
-//var colorcito = document.getElementById()
+//Traemos Color desde HTML
+var colorcito = document.getElementById("color");
+console.log(colorcito);
+//colorcito.addEventListener("onchange", selectColor );
 
 // Ordenes del Teclado
 var teclas = {
@@ -38,7 +42,7 @@ function limpiar_pantalla(){
     papel.clearRect(0, 0, cuadrito.width, cuadrito.height);
     window.x = cuadrito.width/2;
     window.y = cuadrito.height/2;
-    dibujarLinea("blue", x-1, y-1, x+1, y+1, papel);
+    dibujarLinea("black", x-1, y-1, x+1, y+1, papel);
   }
 
 function dibujarTeclado(evento)

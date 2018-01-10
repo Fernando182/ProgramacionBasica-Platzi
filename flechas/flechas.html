@@ -8,13 +8,15 @@
     <canvas width="400" height="400" style="border: 1px solid black" id="area_de_dibujo"></canvas>
     <p>Mueve las flechas del teclado para dibujar</p>
 
-    <input type="button" value="Limpiar!" id="Limpiar" />
+    <input type="button" value="Limpiar!" id="limpiar" />
     <br/>
     <br/>
     <form>
       Color deseado:
-      <select name="color">
-        <!-- Opciones de la lista -->
+      <select id="color" name="color">
+        <!-- Opciones de la lista-->
+    <!--<select id="producto" onchange="ShowSelected();" name="producto">-->
+
         <option value="red" selected>Rojo</option>
         <option value="blue">Azul</option>
         <option value="black">Negro</option>
@@ -22,7 +24,7 @@
     <br/>
     <br/>
       Pincel deseado:
-      <select name="pincel">
+      <select id="pincel" name="pincel">
         <!-- Opciones de la lista -->
         <option value=1>1x</option>
         <option value=3 selected>3x</option>
