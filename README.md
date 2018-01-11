@@ -10,8 +10,6 @@
 - (Cajero)
 
 # Pizarra Platzi
-- Tamaño del pincel (HTML)
-- Linia recta
 - Dibujar con mouse
 
 # Villa Platzi

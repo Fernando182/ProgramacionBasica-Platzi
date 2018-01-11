@@ -8,12 +8,6 @@ document.getElementById("color").addEventListener("change", selectColor);
 
 //Traemos Color
 var pincelito = document.getElementById("pincel");
-pincelito.addEventListener("change", selectPincel);
-
-function selectPincel(){
-//  window.colorcito = document.getElementById("color").value;
-console.log(pincelito.value);
-  }
 
 // Ordenes del Teclado
 var teclas = {
@@ -38,7 +32,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 {
   lienzo.beginPath();
   lienzo.strokeStyle = color;
-  lienzo.lineWidth = 3;
+  lienzo.lineWidth = window.pincelito.value;
   lienzo.moveTo(xinicial, yinicial);
   lienzo.lineTo(xfinal, yfinal);
   lienzo.stroke();
