@@ -3,20 +3,17 @@ var boton = document.getElementById("limpiar");
 boton.addEventListener("click", limpiar_pantalla );
 
 //Traemos Color desde HTML
-document.getElementById("color").addEventListener("change", selectColor);
 var colorcito = document.getElementById("color").value;
+document.getElementById("color").addEventListener("change", selectColor);
 
 //Traemos Color desde HTML
 var pincelito = document.getElementById("pincel");
-pincelito.addEventListener("change", selectPincel);
+pincelito.addEventListener("onchange", selectPincel);
 var p = document.getElementById("pincel").value;
-
-console.log(pincelito);
 
 function selectPincel(){
 console.log(p);
   }
-
 
 // Ordenes del Teclado
 var teclas = {
