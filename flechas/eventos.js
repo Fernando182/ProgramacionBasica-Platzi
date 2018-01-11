@@ -2,17 +2,17 @@
 var boton = document.getElementById("limpiar");
 boton.addEventListener("click", limpiar_pantalla );
 
-//Traemos Color desde HTML
+//Traemos Color
 var colorcito = document.getElementById("color").value;
 document.getElementById("color").addEventListener("change", selectColor);
 
-//Traemos Color desde HTML
+//Traemos Color
 var pincelito = document.getElementById("pincel");
-pincelito.addEventListener("onchange", selectPincel);
-var p = document.getElementById("pincel").value;
+pincelito.addEventListener("change", selectPincel);
 
 function selectPincel(){
-console.log(p);
+//  window.colorcito = document.getElementById("color").value;
+console.log(pincelito.value);
   }
 
 // Ordenes del Teclado
