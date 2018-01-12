@@ -83,7 +83,7 @@ function dibujarTeclado(evento)
 // Funcion para mousemove
 function dibujarMouse(evento){
   if (estado == 1) {   // solo se dibujara si esta el click del mouse presionado
-    dibujarLinea(colorLinea, x, y, evento.layerX, evento.layerY, papel);
+    dibujarLinea(window.colorcito, x, y, evento.layerX, evento.layerY, papel);
   }
   x = evento.layerX;
   y = evento.layerY;

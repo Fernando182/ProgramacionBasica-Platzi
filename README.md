@@ -9,9 +9,6 @@
 - (Pakiman) Pakidex Array
 - (Cajero)
 
-# Pizarra Platzi
-- Dibujar con mouse
-
 # Villa Platzi
 - Crear Cuadricula Sobre la Imagen
   - Guardar Posicion de Obstaculos
