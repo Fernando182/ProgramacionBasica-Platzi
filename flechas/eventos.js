@@ -18,7 +18,6 @@ var teclas = {
 };
 document.addEventListener("keydown", dibujarTeclado);
 
-
 //Entorno de didujo Canvas
 var cuadrito = document.getElementById("area_de_dibujo");
 var papel = cuadrito.getContext("2d");
