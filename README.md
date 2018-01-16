@@ -1,5 +1,5 @@
 # ProgramacionBasica-Platzi
-
+---
 - (peso) Calculo de peso en planetas
 - (dom) Pruebas de DOM
 - (dibujo) Dibujos con Canvas
