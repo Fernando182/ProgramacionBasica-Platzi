@@ -1,11 +1,11 @@
 # ProgramacionBasica-Platzi
----
-- (peso) Calculo de peso en planetas
-- (dom) Pruebas de DOM
-- (dibujo) Dibujos con Canvas
-- (flechas) Mover con flechas del teclado
-- (villaPlatzi) Funciones matematicas JS
-- (modulo) Programa FizzBuzz
+
+- (Peso) Calculo de peso en planetas
+- (Dom) Pruebas de DOM
+- (Dibujo) Dibujos con Canvas
+- (Flechas) Mover con flechas del teclado
+- (VillaPlatzi) Funciones matematicas JS
+- (Modulo) Programa FizzBuzz
 - (Pakiman) Pakidex Array
 - (Cajero)
 
