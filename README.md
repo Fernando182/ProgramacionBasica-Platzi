@@ -10,7 +10,7 @@
 - (Cajero)
 
 # Villa Platzi
-- Crear Cuadricula Sobre la Imagen
+- Crear Cuadricula Sobre la Imagen (Casi)
   - Guardar Posicion de Obstaculos
   - Comprar Posiciones
 - Dibujar Lobo

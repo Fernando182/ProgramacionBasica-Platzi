@@ -72,8 +72,8 @@ function dibujar()
     {
       var x = aleatorio(0, 5);
       var y = aleatorio(0, 5);
-      var x = x * 80;
-      var y = y * 80;
+      var x = x * 100;
+      var y = y * 100;
       papel.drawImage(vaca.imagen, x, y);
     }
   }
@@ -83,8 +83,8 @@ function dibujar()
     {
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 10);
-      var x = x * 60;
-      var y = y * 40;
+      var x = x * 100;
+      var y = y * 100;
       papel.drawImage(cerdo.imagen, x, y);
     }
   }
@@ -94,11 +94,30 @@ function dibujar()
     {
       var x = aleatorio(0, 2);
       var y = aleatorio(0, 7);
-      var x = x * 60;
-      var y = y * 40;
+      var x = x * 100;
+      var y = y * 100;
       papel.drawImage(pollo.imagen, x, y);
     }
   }
+  dibujarLinea("black", 0,100, 500,100);
+  dibujarLinea("black", 0,200, 500,200);
+  dibujarLinea("black", 0,300, 500,300);
+  dibujarLinea("black", 0,400, 500,400);
+
+  dibujarLinea("black", 100,0, 100,500);
+  dibujarLinea("black", 200,0, 200,500);
+  dibujarLinea("black", 300,0, 300,500);
+  dibujarLinea("black", 400,0, 400,500);
+}
+
+function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
+{
+  papel.beginPath();
+  papel.strokeStyle = color;
+  papel.moveTo(xinicial, yinicial);
+  papel.lineTo(xfinal, yfinal);
+  papel.stroke();
+  papel.closePath();
 }
 
 function aleatorio(min, maxi)
