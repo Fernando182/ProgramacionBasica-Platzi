@@ -19,7 +19,7 @@ var cerdo = {
 var pollo = {
   url: "pollo.png",
   cargaOK: false,
-  cantidad: aleatorio(1, 12)
+  cantidad: aleatorio(1, 1)
 };
 
 fondo.imagen = new Image();
@@ -37,7 +37,6 @@ cerdo.imagen.addEventListener("load", cargarCerdos);
 pollo.imagen = new Image();
 pollo.imagen.src = pollo.url;
 pollo.imagen.addEventListener("load", cargarPollos);
-
 
 function cargarFondo()
 {
@@ -62,8 +61,6 @@ function cargarPollos()
 
 function dibujar()
 {
-
-
   if(fondo.cargaOK)
   {
     papel.drawImage(fondo.imagen, 0, 0);
@@ -96,7 +93,6 @@ function dibujar()
 
   if(pollo.cargaOK)
   {
-    console.log("pollos "+pollo.cantidad);
     for(var p=0; p < pollo.cantidad; p++)
     {
       var x = aleatorio(0, 2);

@@ -16,7 +16,6 @@
 - Dibujar Lobo
   - Mover Lobo y contar movimientos
     - Llegar a la Gallina
-- Fondo de Perdida y ganada
 - Ciclo de fin y (gano/Perdio)
 
 (ADDED, UPDATED, FIXED, DELETED)
