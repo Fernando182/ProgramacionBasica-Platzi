@@ -99,15 +99,7 @@ function dibujar()
       papel.drawImage(pollo.imagen, x, y);
     }
   }
-  dibujarLinea("black", 0,100, 500,100);
-  dibujarLinea("black", 0,200, 500,200);
-  dibujarLinea("black", 0,300, 500,300);
-  dibujarLinea("black", 0,400, 500,400);
-
-  dibujarLinea("black", 100,0, 100,500);
-  dibujarLinea("black", 200,0, 200,500);
-  dibujarLinea("black", 300,0, 300,500);
-  dibujarLinea("black", 400,0, 400,500);
+dibujarCuadricula();
 }
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
@@ -124,4 +116,16 @@ function aleatorio(min, maxi)
 {
   var resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
   return resultado;
+}
+
+function dibujarCuadricula(){
+    dibujarLinea("black", 0,100, 500,100);
+    dibujarLinea("black", 0,200, 500,200);
+    dibujarLinea("black", 0,300, 500,300);
+    dibujarLinea("black", 0,400, 500,400);
+
+    dibujarLinea("black", 100,0, 100,500);
+    dibujarLinea("black", 200,0, 200,500);
+    dibujarLinea("black", 300,0, 300,500);
+    dibujarLinea("black", 400,0, 400,500);
 }
