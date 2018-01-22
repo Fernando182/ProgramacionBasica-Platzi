@@ -2,8 +2,8 @@ var vp = document.getElementById("villaplatzi");
 var papel = vp.getContext("2d");
 document.addEventListener("keydown", moverLobo);
 
-var xLobo = 150;
-var yLobo = 100;
+var xLobo = 0;
+var yLobo = 0;
 
 var xVaca = new Array();
 var yVaca = new Array();
