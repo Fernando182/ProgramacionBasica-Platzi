@@ -16,7 +16,7 @@ var yPollo = new Array();
 
 function moverLobo(e)
 {
-	var movimiento = 64;
+	var movimiento = 100;
 	var teclas =
 	{
 		LEFT: 37,
@@ -97,24 +97,62 @@ function cargarFondo()
   fondo.cargaOK = true;
   dibujar();
 }
+function cargaLobo()
+{
+	lobo.cargaOK = true;
+	dibujar();
+}
 function cargarVacas()
 {
   vaca.cargaOK = true;
-  dibujar();
+  mantenerPosicion();
 }
 function cargarCerdos()
 {
   cerdo.cargaOK = true;
-  dibujar();
+  mantenerPosicion();
 }
 function cargarPollos()
 {
   pollo.cargaOK = true;
-  dibujar();
+  mantenerPosicion();
 }
-function cargaLobo()
+
+function mantenerPosicion()
 {
-	lobo.cargaOK = true;
+	if(vaca.cargaOK)
+	{
+		var cantidad = aleatorio(1, 5);
+		for(var i=0; i<cantidad; i++)
+		{
+      var x = aleatorio(0, 4);
+      var y = aleatorio(0, 4);
+      xVaca[i] = x * 100;
+      yVaca[i] = y * 100;
+		}
+	}
+	if(cerdo.cargaOK)
+	{
+		var cantidad = aleatorio(1, 5);
+		for(var i=0; i<cantidad; i++)
+		{
+      var x = aleatorio(0, 4);
+      var y = aleatorio(0, 4);
+      xCerdo[i] = x * 100;
+      yCerdo[i] = y * 100;
+		}
+	}
+	if(pollo.cargaOK)
+	{
+		var cantidad = aleatorio(1, 10);
+		for(var i=0; i<cantidad; i++)
+		{
+      var x = aleatorio(0, 4);
+      var y = aleatorio(0, 4);
+      xPollo[i] = x * 100;
+      yPollo[i] = y * 100;
+		}
+	}
 	dibujar();
 }
 
@@ -128,10 +166,6 @@ function dibujar()
   {
     for(var v=0; v < vaca.cantidad; v++)
     {
-      var x = aleatorio(0, 4);
-      var y = aleatorio(0, 4);
-      xVaca[v] = x * 100;
-      yVaca[v] = y * 100;
       papel.drawImage(vaca.imagen, xVaca[v], yVaca[v]);
     }
   }
@@ -139,10 +173,6 @@ function dibujar()
   {
     for(var c=0; c < cerdo.cantidad; c++)
     {
-      var x = aleatorio(0, 4);
-      var y = aleatorio(0, 4);
-      xCerdo[c] = x * 100;
-      yCerdo[c] = y * 100;
       papel.drawImage(cerdo.imagen, xCerdo[c], yCerdo[c]);
     }
   }
@@ -150,10 +180,6 @@ function dibujar()
   {
     for(var p=0; p < pollo.cantidad; p++)
     {
-      var x = aleatorio(0, 4);
-      var y = aleatorio(0, 4);
-      xPollo[p] = x * 100;
-      yPollo[p] = y * 100;
       papel.drawImage(pollo.imagen, xPollo[p], yPollo[p]);
     }
     if (lobo.cargaOK) {
