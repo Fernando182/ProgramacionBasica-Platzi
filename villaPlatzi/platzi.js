@@ -14,9 +14,6 @@ var yCerdo = new Array();
 var xPollo = new Array();
 var yPollo = new Array();
 
-var xComparar = new Array();
-var yComparar = new Array();
-
 function moverLobo(e)
 {
 	var movimiento = 100;
@@ -50,6 +47,8 @@ function moverLobo(e)
 
 var fondo = {
   url: "tile.png",
+	url_gana: "tile_ganaste.png",
+	url_pierde: "tile_perdiste.png",
   cargaOK: false,
   cantidad: 1
 };
@@ -131,16 +130,8 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
-			xComparar[i] = xVaca[i];
-			yComparar[i] = yVaca[i];
-			console.log("cantidad V: "+vaca.cantidad);
-			console.log("Posiciones x: "+xVaca[i]);
-			console.log("Posiciones y: "+yVaca[i]);
-			console.log("Compa x: "+xComparar[i]);
-			console.log("Compa y: "+yComparar[i]);
-
+			}
 		}
-	}
 	if(cerdo.cargaOK)
 	{
 		for(var i=0; i<cerdo.cantidad; i++)
