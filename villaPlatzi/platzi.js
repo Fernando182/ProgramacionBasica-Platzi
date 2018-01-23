@@ -130,8 +130,13 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
+			var xComparar = xVaca[i];
+			var yComparar = yVaca[i];
+			if (xComparar == xVaca[i-1] && yComparar == yVaca[i-1]){
+				i=i-1;
 			}
 		}
+	}
 	if(cerdo.cargaOK)
 	{
 		for(var i=0; i<cerdo.cantidad; i++)
@@ -140,6 +145,11 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xCerdo[i] = x * 100;
       yCerdo[i] = y * 100;
+			xComparar = xCerdo[i];
+			yComparar = xCerdo[i];
+			if (xComparar == xCerdo[i-1] && yComparar == yCerdo[i-1]){
+				i=i-1;
+			}
 		}
 	}
 	if(pollo.cargaOK)
