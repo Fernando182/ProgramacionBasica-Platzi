@@ -10,9 +10,7 @@
 - (Cajero)
 
 # Villa Platzi
-  - Comprar Posiciones
-- Dibujar Lobo
-  - Mover Lobo y contar movimientos
+  - Comparar Posiciones
     - Llegar a la Gallina
 - Ciclo de fin y (gano/Perdio)
 

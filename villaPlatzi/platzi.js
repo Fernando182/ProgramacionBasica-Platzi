@@ -14,6 +14,9 @@ var yCerdo = new Array();
 var xPollo = new Array();
 var yPollo = new Array();
 
+var xComparar = new Array();
+var yComparar = new Array();
+
 function moverLobo(e)
 {
 	var movimiento = 100;
@@ -48,17 +51,17 @@ function moverLobo(e)
 var fondo = {
   url: "tile.png",
   cargaOK: false,
-  cantidad: aleatorio(1, 1)
+  cantidad: 1
 };
 var vaca = {
   url: "vaca.png",
   cargaOK: false,
-  cantidad: aleatorio(1, 5)
+  cantidad: aleatorio(1,4)
 };
 var cerdo = {
   url: "cerdo.png",
   cargaOK: false,
-  cantidad: aleatorio(1, 6)
+  cantidad: aleatorio(1, 5)
 };
 var pollo = {
   url: "pollo.png",
@@ -122,19 +125,25 @@ function mantenerPosicion()
 {
 	if(vaca.cargaOK)
 	{
-		var cantidad = aleatorio(1, 5);
-		for(var i=0; i<cantidad; i++)
+		for(var i=0; i<vaca.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
+			xComparar[i] = xVaca[i];
+			yComparar[i] = yVaca[i];
+			console.log("cantidad V: "+vaca.cantidad);
+			console.log("Posiciones x: "+xVaca[i]);
+			console.log("Posiciones y: "+yVaca[i]);
+			console.log("Compa x: "+xComparar[i]);
+			console.log("Compa y: "+yComparar[i]);
+
 		}
 	}
 	if(cerdo.cargaOK)
 	{
-		var cantidad = aleatorio(1, 5);
-		for(var i=0; i<cantidad; i++)
+		for(var i=0; i<cerdo.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
@@ -144,8 +153,7 @@ function mantenerPosicion()
 	}
 	if(pollo.cargaOK)
 	{
-		var cantidad = aleatorio(1, 10);
-		for(var i=0; i<cantidad; i++)
+		for(var i=0; i<pollo.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
