@@ -14,14 +14,11 @@
     - Llegar a la Gallina
 - Ciclo de fin y (gano/Perdio)
 
-# FizzBuzz
-- Hacerlo Bonito
-
 # Paint
 - Tutorial de pain con Js
 
 #Ciclos
-- Ejemplos de Ciclos Js 
+- Ejemplos de Ciclos Js
 
 
 (ADDED, UPDATED, FIXED, DELETED)
