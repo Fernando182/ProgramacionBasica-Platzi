@@ -118,6 +118,16 @@ function cargarFondo()
   fondo.cargaOK = true;
   dibujar();
 }
+function cargarFondogana()
+{
+  fondo_gana.cargaOK = true;
+  dibujar();
+}
+function cargarFondopierde()
+{
+  fondo_pierde.cargaOK = true;
+  dibujar();
+}
 function cargaLobo()
 {
 	lobo.cargaOK = true;
@@ -149,16 +159,21 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
+			xComparar[i] = xVaca[i];
+			yComparar[i] = yVaca[i];
 		}
 	}
 	if(cerdo.cargaOK)
 	{
+		var q = xComparar.length;
 		for(var i=0; i<cerdo.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
-      xCerdo[i] = x * 100;
+			xCerdo[i] = x * 100;
       yCerdo[i] = y * 100;
+			xComparar[q+i] = xCerdo[i];
+			yComparar[q+i] = yCerdo[i];			
 			}
 		}
 	if(pollo.cargaOK)

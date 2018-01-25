@@ -14,4 +14,13 @@
     - Llegar a la Gallina
 - Ciclo de fin y (gano/Perdio)
 
+for (var xc=0;x<xComparar.length;xc++)
+  {
+  if (xComparar[xc] == xVaca[xc] && yComparar[xc] == yVaca[xc])
+    {
+  alert("iguales")
+    }
+  }
+
+
 (ADDED, UPDATED, FIXED, DELETED)
