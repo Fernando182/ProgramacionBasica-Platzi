@@ -14,13 +14,14 @@
     - Llegar a la Gallina
 - Ciclo de fin y (gano/Perdio)
 
-for (var xc=0;x<xComparar.length;xc++)
-  {
-  if (xComparar[xc] == xVaca[xc] && yComparar[xc] == yVaca[xc])
-    {
-  alert("iguales")
-    }
-  }
+# FizzBuzz
+- Hacerlo Bonito
+
+# Paint
+- Tutorial de pain con Js
+
+#Ciclos
+- Ejemplos de Ciclos Js 
 
 
 (ADDED, UPDATED, FIXED, DELETED)
