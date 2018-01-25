@@ -161,6 +161,10 @@ function mantenerPosicion()
       yVaca[i] = y * 100;
 			xComparar[i] = xVaca[i];
 			yComparar[i] = yVaca[i];
+		  if (xComparar[i-1] == xVaca[i] && yComparar[i-1] == yVaca[i])
+			    {
+			     i=i-1;
+			    }
 		}
 	}
 	if(cerdo.cargaOK)
@@ -173,7 +177,7 @@ function mantenerPosicion()
 			xCerdo[i] = x * 100;
       yCerdo[i] = y * 100;
 			xComparar[q+i] = xCerdo[i];
-			yComparar[q+i] = yCerdo[i];			
+			yComparar[q+i] = yCerdo[i];
 			}
 		}
 	if(pollo.cargaOK)
