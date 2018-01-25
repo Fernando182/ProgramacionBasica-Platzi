@@ -89,6 +89,14 @@ fondo.imagen = new Image();
 fondo.imagen.src = fondo.url;
 fondo.imagen.addEventListener("load", cargarFondo);
 
+fondo_gana.imagen = new Image();
+fondo_gana.imagen.src = fondo_gana.url;
+fondo_gana.imagen.addEventListener("load", cargarFondogana);
+
+fondo_pierde.imagen = new Image();
+fondo_pierde.imagen.src = fondo_pierde.url;
+fondo_pierde.imagen.addEventListener("load", cargarFondopierde);
+
 vaca.imagen = new Image();
 vaca.imagen.src = vaca.url;
 vaca.imagen.addEventListener("load", cargarVacas);
