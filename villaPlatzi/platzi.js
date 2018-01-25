@@ -2,9 +2,6 @@ var vp = document.getElementById("villaplatzi");
 var papel = vp.getContext("2d");
 document.addEventListener("keydown", moverLobo);
 
-var xLobo = 0;
-var yLobo = 0;
-
 var xVaca = new Array();
 var yVaca = new Array();
 
@@ -13,6 +10,12 @@ var yCerdo = new Array();
 
 var xPollo = new Array();
 var yPollo = new Array();
+
+var xComparar = new Array();
+var yComparar = new Array();
+
+var xLobo = 0;
+var yLobo = 0;
 
 function moverLobo(e)
 {
@@ -47,8 +50,16 @@ function moverLobo(e)
 
 var fondo = {
   url: "tile.png",
-	url_gana: "tile_ganaste.png",
-	url_pierde: "tile_perdiste.png",
+  cargaOK: false,
+  cantidad: 1
+};
+var fondo_gana = {
+  url: "tile_ganaste.png",
+  cargaOK: false,
+  cantidad: 1
+};
+var fondo_pierde = {
+  url: "tile_perdiste.png",
   cargaOK: false,
   cantidad: 1
 };
@@ -130,11 +141,6 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
-			var xComparar = xVaca[i];
-			var yComparar = yVaca[i];
-			if (xComparar == xVaca[i-1] && yComparar == yVaca[i-1]){
-				i=i-1;
-			}
 		}
 	}
 	if(cerdo.cargaOK)
@@ -145,13 +151,8 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xCerdo[i] = x * 100;
       yCerdo[i] = y * 100;
-			xComparar = xCerdo[i];
-			yComparar = xCerdo[i];
-			if (xComparar == xCerdo[i-1] && yComparar == yCerdo[i-1]){
-				i=i-1;
 			}
 		}
-	}
 	if(pollo.cargaOK)
 	{
 		for(var i=0; i<pollo.cantidad; i++)
@@ -198,6 +199,17 @@ function dibujar()
   dibujarCuadricula();
 }
 
+function dibujarCuadricula(){
+  for (var i = 0; i < 5; i++) {
+    var px=i*100;
+    dibujarLinea("black", 0,px, 500,px);
+    }
+  for (var i = 5; i >= 0; i--) {
+    var py=i*100;
+    dibujarLinea("black", py,0, py,500);
+    }
+}
+
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 {
   papel.beginPath();
@@ -212,15 +224,4 @@ function aleatorio(min, maxi)
 {
   var resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
   return resultado;
-}
-
-function dibujarCuadricula(){
-  for (var i = 0; i < 5; i++) {
-    var px=i*100;
-    dibujarLinea("black", 0,px, 500,px);
-    }
-  for (var i = 5; i >= 0; i--) {
-    var py=i*100;
-    dibujarLinea("black", py,0, py,500);
-    }
 }
