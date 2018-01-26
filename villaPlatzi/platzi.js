@@ -11,11 +11,11 @@ var yCerdo = new Array();
 var xPollo = new Array();
 var yPollo = new Array();
 
-var xComparar = new Array();
-var yComparar = new Array();
+var xComparar = [0];
+var yComparar = [0];
 
-var xLobo = 0;
-var yLobo = 0;
+var xLobo = xComparar[0];
+var yLobo = yComparar[0];
 
 function moverLobo(e)
 {
@@ -159,25 +159,24 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
-			xComparar[i] = xVaca[i];
-			yComparar[i] = yVaca[i];
-		  if (xComparar[i-1] == xVaca[i] && yComparar[i-1] == yVaca[i])
-			    {
-			     i=i-1;
-			    }
+			for (var j = 0; j < xComparar.length; j++) {
+					if (xVaca[i] == xComparar[j] && yVaca[i] == yComparar[j]) {
+					i=i-1;
+				 } else {
+					 xComparar[j]=xVaca[i];
+					 yComparar[j]=yVaca[i];
+				   }
+			}
 		}
 	}
 	if(cerdo.cargaOK)
 	{
-		var q = xComparar.length;
 		for(var i=0; i<cerdo.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
 			xCerdo[i] = x * 100;
       yCerdo[i] = y * 100;
-			xComparar[q+i] = xCerdo[i];
-			yComparar[q+i] = yCerdo[i];
 			}
 		}
 	if(pollo.cargaOK)
