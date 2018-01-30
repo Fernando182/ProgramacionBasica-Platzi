@@ -159,14 +159,6 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
-			for (var j = 0; j < xComparar.length; j++) {
-					if (xVaca[i] == xComparar[j] && yVaca[i] == yComparar[j]) {
-					i=i-1;
-				 } else {
-					 xComparar[j]=xVaca[i];
-					 yComparar[j]=yVaca[i];
-				   }
-			}
 		}
 	}
 	if(cerdo.cargaOK)
