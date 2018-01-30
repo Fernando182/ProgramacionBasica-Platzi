@@ -17,8 +17,4 @@
 # Paint
 - Tutorial de pain con Js
 
-#Ciclos
-- Ejemplos de Ciclos Js
-
-
 (ADDED, UPDATED, FIXED, DELETED)
