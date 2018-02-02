@@ -13,7 +13,6 @@
   - Comparar Posiciones
     - Llegar a la Gallina
 - Ciclo de fin y (gano/Perdio)
-
 # Paint
 - Tutorial de pain con Js
 
