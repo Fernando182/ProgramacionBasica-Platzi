@@ -165,6 +165,7 @@ function cargarPollos()
   mantenerPosicion();
 }
 
+// Rellena areeglos de los Obsatculos
 function mantenerPosicion()
 {
 	if(vaca.cargaOK)
@@ -201,6 +202,7 @@ function mantenerPosicion()
 	dibujar();
 }
 
+// Compara Posiciones entre todos los arreglos para no repetio Posiciones
 function compararPosicion()
 {
 	for (var cp = 0; cp < lobo.cantidad; cp++) {
@@ -208,14 +210,52 @@ function compararPosicion()
 		yComparar[cp] = yLobo;
 	}
 	for (var i = 0; i < xVaca.length; i++) {
-		xComparar[cp] = xVaca[i];
-		yComparar[cp] = yVaca[i];
-		cp++;
+		if (xComparar[cp] == xVaca[i] && yComparar[cp] == yVaca[i]) {
+				if (yVaca[i] > 0 && yVaca[i] < 400  ) {
+					yVaca[i]=yVaca[i]+100;
+					i--;
+				}
+				else {
+					if (yVaca[i]=0) {
+						yVaca[i]=yVaca[i]+100;
+						i--;
+					}
+					else {
+						yVaca[i]=yVaca[i]-100;
+						i--;
+					}
+				}
+		}
+		else {
+			xComparar[cp] = xVaca[i];
+			yComparar[cp] = yVaca[i];
+			cp++;
+		}
 	}
-	for (var i = 0; i < xCerdo.length; i++) {
-		xComparar[cp] = xCerdo[i];
-		yComparar[cp] = yCerdo[i];
-		cp++;
+	for (var i = 0; i < xComparar.length; i++) {
+		for (var j = 0; j < xCerdo.length; j++) {
+			if (xComparar[i] == xCerdo[j] && yComparar[i] == yCerdo[j]) {
+				if (xCerdo[j] > 0 && xCerdo[j] < 400  ) {
+						xCerdo[j]=xCerdo[j]+100;
+						j--;
+				}
+				else {
+					if (xCerdo[j]=0) {
+						xCerdo[j]=xCerdo[j]+100;
+						j--;
+					}
+					else {
+						xCerdo[j]=xCerdo[j]-100;
+						j--;
+					}
+				}
+			}
+			else {
+				xComparar[cp] = xCerdo[i];
+				yComparar[cp] = yCerdo[i];
+				cp++;
+			}
+		}
 	}
 	for (var i = 0; i < xPollo.length; i++) {
 		xComparar[cp] = xPollo[i];
