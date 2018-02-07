@@ -30,20 +30,36 @@ function moverLobo(e)
 	switch(e.keyCode)
 	{
 		case teclas.LEFT:
-			xLobo = xLobo - movimiento;
-			dibujar(xLobo, yLobo);
+			if (xLobo <= 0) {
+				dibujar(xLobo, yLobo);
+			} else {
+				xLobo = xLobo - movimiento;
+				dibujar(xLobo, yLobo);
+			}
 		break;
 		case teclas.UP:
-			yLobo = yLobo - movimiento;
-			dibujar(xLobo, yLobo);
+			if (yLobo <= 0) {
+				dibujar(xLobo, yLobo);
+			} else {
+				yLobo = yLobo - movimiento;
+				dibujar(xLobo, yLobo);
+			}
 		break;
 		case teclas.RIGHT:
-			xLobo = xLobo + movimiento;
-			dibujar(xLobo, yLobo);
+			if (xLobo >= 400) {
+				dibujar(xLobo, yLobo);
+			} else {
+				xLobo = xLobo + movimiento;
+				dibujar(xLobo, yLobo);
+			}
 		break;
 		case teclas.DOWN:
-			yLobo = yLobo + movimiento;
-			dibujar(xLobo, yLobo);
+			if (yLobo >= 400) {
+				dibujar(xLobo, yLobo);
+			} else {
+				yLobo = yLobo + movimiento;
+				dibujar(xLobo, yLobo);
+			}
 		break;
 	}
 }
@@ -183,15 +199,6 @@ function mantenerPosicion()
 	}
 	dibujar();
 }
-
-function compararPosicion(){
-	
-
-}
-
-
-
-
 
 function dibujar()
 {
