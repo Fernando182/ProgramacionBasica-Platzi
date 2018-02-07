@@ -184,6 +184,15 @@ function mantenerPosicion()
 	dibujar();
 }
 
+function compararPosicion(){
+	
+
+}
+
+
+
+
+
 function dibujar()
 {
   if(fondo.cargaOK)
