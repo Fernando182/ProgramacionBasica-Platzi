@@ -11,11 +11,11 @@ var yCerdo = new Array();
 var xPollo = new Array();
 var yPollo = new Array();
 
-var xComparar = [0];
-var yComparar = [0];
+var xComparar = new Array();
+var yComparar = new Array();
 
-var xLobo = xComparar[0];
-var yLobo = yComparar[0];
+var xLobo = 0;
+var yLobo = 0;
 
 function moverLobo(e)
 {
@@ -197,7 +197,31 @@ function mantenerPosicion()
       yPollo[i] = y * 100;
 		}
 	}
+	compararPosicion();
 	dibujar();
+}
+
+function compararPosicion()
+{
+	for (var cp = 0; cp < lobo.cantidad; cp++) {
+		xComparar[cp] = xLobo;
+		yComparar[cp] = yLobo;
+	}
+	for (var i = 0; i < xVaca.length; i++) {
+		xComparar[cp] = xVaca[i];
+		yComparar[cp] = yVaca[i];
+		cp++;
+	}
+	for (var i = 0; i < xCerdo.length; i++) {
+		xComparar[cp] = xCerdo[i];
+		yComparar[cp] = yCerdo[i];
+		cp++;
+	}
+	for (var i = 0; i < xPollo.length; i++) {
+		xComparar[cp] = xPollo[i];
+		yComparar[cp] = yPollo[i];
+		cp++;
+	}
 }
 
 function dibujar()

@@ -17,8 +17,3 @@
 - Tutorial de pain con Js
 
 (ADDED, UPDATED, FIXED, DELETED)
-
-function compararPosicion(){
-
-
-}

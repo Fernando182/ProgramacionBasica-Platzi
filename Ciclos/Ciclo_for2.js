@@ -1,9 +1,6 @@
 var xComparar = [0];
 var yComparar = [0];
 
-var xLobo = xComparar[0];
-var yLobo = yComparar[0];
-
     for(var i=1; i<5; i++)
     {
       var x = aleatorio(0, 4);
