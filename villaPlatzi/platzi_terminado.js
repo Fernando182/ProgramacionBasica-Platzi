@@ -166,6 +166,20 @@ function cargarPollos()
 }
 
 // Rellena areeglos de los Obsatculos
+
+function totalPosicion()
+{
+	var a,b;
+	for (i=0; i<5; i++) {
+	      a = 100*i;
+	      for (j=0; j<5; j++){
+	          b = 100*j;
+	          xComparar[i]=a;
+	          yComparar[j]=b;
+	      }
+			}
+}
+
 function mantenerPosicion()
 {
 	if(vaca.cargaOK)
@@ -199,47 +213,6 @@ function mantenerPosicion()
 		}
 	}
 	dibujar();
-}
-
-// Creo arreglo para Comparar
-function crearArrayComparar()
-{
-		var cp = 0
-		xComparar[cp] = xLobo;
-		yComparar[cp] = yLobo;
-		cp++;
-	for (var i = 0; i < xVaca.length; i++) {
-			xComparar[cp] = xVaca[i];
-			yComparar[cp] = yVaca[i];
-			cp++;
-	  }
-	for (var j = 0; j < xCerdo.length; j++) {
-			xComparar[cp] = xCerdo[j];
-			yComparar[cp] = yCerdo[j];
-			cp++;
-		}
-	for (var i = 0; i < xPollo.length; i++) {
-		 xComparar[cp] = xPollo[i];
-		 yComparar[cp] = yPollo[i];
-		 cp++;
-	 }
-}
-
-function compararPosicion()
-{
-	for (x=0; x<xComparar.length; x++){
-			 for (y=0; y<xVaca.length; y++){
-					if (xComparar[x] == xVaca[y] && yComparar[x] == yVaca[y]) {
-
-						}
-					else if (true) {
-
-							}
-							else {
-
-						}
-				}
-			}
 }
 
 
