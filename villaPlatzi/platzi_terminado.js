@@ -184,7 +184,7 @@ function mantenerPosicionV()
 			var y = aleatorio(0, 4);
 			for (var j = 0; j < init; j++) {
 			  if (xComparar[j] == xVaca[i] && yComparar[j] == yVaca[i]) {
-			    console.log("Vacas");
+					console.log("Vacas");
 			  } else {
 					xVaca[i] = x * 100;
 					yVaca[i] = y * 100;

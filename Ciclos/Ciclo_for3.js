@@ -39,3 +39,27 @@ for (i=0; i<5; i++) {
           yComparar[j]=b;
       }
 }
+
+function mantenerPosicionV()
+{
+	//Agregar posiscion xLobo y yLobo
+	addComparar(0,0,0);
+	init=xComparar.length;
+	if(vaca.cargaOK)
+	{
+		// Verificar repetidos
+		for(var i=0; i<vaca.cantidad; i++) {
+			var x = aleatorio(0, 4);
+			var y = aleatorio(0, 4);
+			for (var j = 0; j < init; j++) {
+			  if (xComparar[j] == xVaca[i] && yComparar[j] == yVaca[i]) {
+			    console.log("Vacas");
+			  } else {
+					xVaca[i] = x * 100;
+					yVaca[i] = y * 100;
+					addComparar(i+init,xVaca[i],yVaca[i]);
+			  }
+			}
+		}
+	}
+}
