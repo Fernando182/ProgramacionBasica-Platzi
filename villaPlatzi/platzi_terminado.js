@@ -152,7 +152,7 @@ function cargaLobo()
 function cargarVacas()
 {
   vaca.cargaOK = true;
-  mantenerPosicion();
+  mantenerPosicionV();
 }
 function cargarCerdos()
 {
@@ -165,23 +165,17 @@ function cargarPollos()
   mantenerPosicion();
 }
 
-// Rellena areeglos de los Obsatculos
-
-function totalPosicion()
-{
-	var a,b;
-	for (i=0; i<5; i++) {
-	      a = 100*i;
-	      for (j=0; j<5; j++){
-	          b = 100*j;
-	          xComparar[i]=a;
-	          yComparar[j]=b;
-	      }
-			}
+//Cargar datos en el arreglo Comparar
+function addComparar(iPosiscion,xValor,yValor){
+	xComparar[iPosiscion] = xValor;
+	yComparar[iPosiscion] = yValor;
 }
 
-function mantenerPosicion()
+//Crear posiscion y compara para las Vacas
+function mantenerPosicionV()
 {
+	//Agregar posiscion xLobo y yLobo
+	addComparar(0,0,0);
 	if(vaca.cargaOK)
 	{
 		for(var i=0; i<vaca.cantidad; i++)
@@ -190,8 +184,14 @@ function mantenerPosicion()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
+			addComparar(i+1,xVaca[i],yVaca[i]);
 		}
 	}
+}
+
+//Crear posiscion y compara para los Cerdos
+function mantenerPosicionC()
+{
 	if(cerdo.cargaOK)
 	{
 		for(var i=0; i<cerdo.cantidad; i++)
@@ -202,6 +202,10 @@ function mantenerPosicion()
       yCerdo[i] = y * 100;
 			}
 		}
+}
+
+function mantenerPosicionP()
+{
 	if(pollo.cargaOK)
 	{
 		for(var i=0; i<pollo.cantidad; i++)
@@ -212,6 +216,8 @@ function mantenerPosicion()
       yPollo[i] = y * 100;
 		}
 	}
+}
+//--- IMPORTANTE
 	dibujar();
 }
 
