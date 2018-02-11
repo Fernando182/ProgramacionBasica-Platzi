@@ -178,18 +178,16 @@ function mantenerPosicionV()
 	init=xComparar.length;
 	if(vaca.cargaOK)
 	{
-		for(var i=0; i<vaca.cantidad; i++)
-		{
-      var x = aleatorio(0, 4);
-      var y = aleatorio(0, 4);
-      xVaca[i] = x * 100;
-      yVaca[i] = y * 100;
-			// Verificar repetidos
+		// Verificar repetidos
+		for(var i=0; i<vaca.cantidad; i++) {
+			var x = aleatorio(0, 4);
+			var y = aleatorio(0, 4);
 			for (var j = 0; j < init; j++) {
 			  if (xComparar[j] == xVaca[i] && yComparar[j] == yVaca[i]) {
-					i=i-1;
 			    console.log("Vacas");
 			  } else {
+					xVaca[i] = x * 100;
+					yVaca[i] = y * 100;
 					addComparar(i+init,xVaca[i],yVaca[i]);
 			  }
 			}
@@ -202,18 +200,17 @@ function mantenerPosicionC()
 	init=xComparar.length;
 	if(cerdo.cargaOK)
 	{
+		// Verificar repetidos
 		for(var i=0; i<cerdo.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
-			xCerdo[i] = x * 100;
-      yCerdo[i] = y * 100;
-			// Verificar repetidos
 			for (var j = 0; j < init; j++) {
 				if (xComparar[j] == xCerdo[i] && yComparar[j] == yCerdo[i]) {
-					i=i-1;
 					console.log("Cerdos");
 				} else {
+					xCerdo[i] = x * 100;
+					yCerdo[i] = y * 100;
 					addComparar(i+init,xCerdo[i],yCerdo[i]);
 				}
 			}
@@ -226,18 +223,18 @@ function mantenerPosicionP()
 	init=xComparar.length;
 	if(pollo.cargaOK)
 	{
+		// Verificar repetidos
 		for(var i=0; i<pollo.cantidad; i++)
 		{
       var x = aleatorio(0, 4);
       var y = aleatorio(0, 4);
-      xPollo[i] = x * 100;
-      yPollo[i] = y * 100;
 			// Verificar repetidos
 			for (var j = 0; j < init; j++) {
 				if (xComparar[j] == xPollo[i] && yComparar[j] == yPollo[i]) {
-					i=i-1;
-					console.log("pollo");
+					console.log("pollo "+ i);
 				} else {
+					xPollo[i] = x * 100;
+					yPollo[i] = y * 100;
 					addComparar(i+init,xVaca[i],yVaca[i]);
 				}
 			}
