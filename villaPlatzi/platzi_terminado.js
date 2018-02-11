@@ -157,25 +157,25 @@ function cargarVacas()
 function cargarCerdos()
 {
   cerdo.cargaOK = true;
-  mantenerPosicion();
+  mantenerPosicionC();
 }
 function cargarPollos()
 {
   pollo.cargaOK = true;
-  mantenerPosicion();
+  mantenerPosicionP();
 }
-
 //Cargar datos en el arreglo Comparar
-function addComparar(iPosiscion,xValor,yValor){
+function addComparar(iPosiscion,xValor,yValor)
+{
 	xComparar[iPosiscion] = xValor;
 	yComparar[iPosiscion] = yValor;
 }
-
 //Crear posiscion y compara para las Vacas
 function mantenerPosicionV()
 {
 	//Agregar posiscion xLobo y yLobo
 	addComparar(0,0,0);
+	init=xComparar.length;
 	if(vaca.cargaOK)
 	{
 		for(var i=0; i<vaca.cantidad; i++)
@@ -184,14 +184,22 @@ function mantenerPosicionV()
       var y = aleatorio(0, 4);
       xVaca[i] = x * 100;
       yVaca[i] = y * 100;
-			addComparar(i+1,xVaca[i],yVaca[i]);
+			// Verificar repetidos
+			for (var j = 0; j < init; j++) {
+			  if (xComparar[j] == xVaca[i] && yComparar[j] == yVaca[i]) {
+					i=i-1;
+			    console.log("Vacas");
+			  } else {
+					addComparar(i+init,xVaca[i],yVaca[i]);
+			  }
+			}
 		}
 	}
 }
-
 //Crear posiscion y compara para los Cerdos
 function mantenerPosicionC()
 {
+	init=xComparar.length;
 	if(cerdo.cargaOK)
 	{
 		for(var i=0; i<cerdo.cantidad; i++)
@@ -200,12 +208,22 @@ function mantenerPosicionC()
       var y = aleatorio(0, 4);
 			xCerdo[i] = x * 100;
       yCerdo[i] = y * 100;
+			// Verificar repetidos
+			for (var j = 0; j < init; j++) {
+				if (xComparar[j] == xCerdo[i] && yComparar[j] == yCerdo[i]) {
+					i=i-1;
+					console.log("Cerdos");
+				} else {
+					addComparar(i+init,xCerdo[i],yCerdo[i]);
+				}
 			}
 		}
+	}
 }
-
+//Crear posiscion y compara para los Pollos y dibujar
 function mantenerPosicionP()
 {
+	init=xComparar.length;
 	if(pollo.cargaOK)
 	{
 		for(var i=0; i<pollo.cantidad; i++)
@@ -214,13 +232,19 @@ function mantenerPosicionP()
       var y = aleatorio(0, 4);
       xPollo[i] = x * 100;
       yPollo[i] = y * 100;
+			// Verificar repetidos
+			for (var j = 0; j < init; j++) {
+				if (xComparar[j] == xPollo[i] && yComparar[j] == yPollo[i]) {
+					i=i-1;
+					console.log("pollo");
+				} else {
+					addComparar(i+init,xVaca[i],yVaca[i]);
+				}
+			}
 		}
 	}
-}
-//--- IMPORTANTE
 	dibujar();
 }
-
 
 function dibujar()
 {
