@@ -1,4 +1,6 @@
 // Genera un número aleatorio ente un rago de enteros
+alert("Tupa");
+
 function aleatorio(minimo, maximo)
 {
     var numero = Math.floor( Math.random() * (maximo - minimo +1 ) + minimo );
