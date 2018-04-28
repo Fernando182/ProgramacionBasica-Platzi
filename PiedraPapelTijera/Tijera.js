@@ -12,7 +12,6 @@ var tijera = 2;
 var opciones = ["Piedra", "Papel", "Tijera"];
 var opcionUsuario=0;
 
-while (opcionUsuario != 9) {
   opcionUsuario = prompt("¿Qué eliges?\nPiedra: 0\nPapel: 1\nTijera: 2\nSalir: 9");
 
   var opcionMaquina = aleatorio(0,2);
