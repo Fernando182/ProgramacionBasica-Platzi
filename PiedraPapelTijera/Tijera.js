@@ -1,4 +1,5 @@
 //Genera un número aleatorio entre un rango de enteros
+//  A ver el ssh 
 function aleatorio(minimo, maximo)
 {
     var numero = Math.floor( Math.random() * (maximo - minimo + 1) + minimo );
