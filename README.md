@@ -1,5 +1,4 @@
 # ProgramacionBasica-Platzi
-
 - (Peso) Calculo de peso en planetas
 - (Dom) Pruebas de DOM
 - (Dibujo) Dibujos con Canvas
@@ -9,10 +8,12 @@
 - (Pakiman) Pakidex Array
 - (Cajero)
 
+
+(Pendientes)
 # Villa Platzi
-  - Comparar Posiciones
-    - Llegar a la Gallina
-- Ciclo de fin y (gano/Perdio)
+- Comparar Posiciones
+- Llegar a la Gallina
+- Ciclo de fin  (gano/Perdio)
 
 # Paint
 - Tutorial de pain con Js
