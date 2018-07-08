@@ -9,13 +9,12 @@
 - (Cajero)
 
 
-(Pendientes)
-# Villa Platzi
+# (Pendientes)
+### Villa Platzi
 - Comparar Posiciones
 - Llegar a la Gallina
 - Ciclo de fin  (gano/Perdio)
 
-# Paint
+### Paint
 - Tutorial de pain con Js
-
 (ADDED, UPDATED, FIXED, DELETED)
