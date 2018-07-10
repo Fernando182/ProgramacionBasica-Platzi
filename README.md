@@ -7,7 +7,7 @@
 - (Modulo) Programa FizzBuzz
 - (Pakiman) Pakidex Array
 - (Cajero)
-- Una cosa Mas 
+- Una cosa Mas
 
 # (Pendientes)
 ### Villa Platzi
@@ -17,5 +17,6 @@
 
 ### Paint
 - Tutorial de pain con Js
+- Estos es una Prueba
 
 (ADDED, UPDATED, FIXED, DELETED)
