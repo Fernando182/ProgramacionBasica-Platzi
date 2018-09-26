@@ -16,7 +16,7 @@
 - Ciclo de fin  (gano/Perdio)
 
 ### Paint
-- Tutorial de pain con Js
+- Pain con Js
 - Estos es una Prueba
 
 (ADDED, UPDATED, FIXED, DELETED)
