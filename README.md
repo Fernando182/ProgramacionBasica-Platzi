@@ -18,6 +18,5 @@
 - Pain con Js
 - Estos es una Prueba
 - Codepen
--
 
 (ADDED, UPDATED, FIXED, DELETED)
