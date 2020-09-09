@@ -1,4 +1,4 @@
-# ProgramacionBasica-Platzi
+# Programacion 
 - (Peso) Calculo de peso en planetas
 - (Dom) Pruebas de DOM
 - (Dibujo) Dibujos con Canvas
